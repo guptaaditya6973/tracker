@@ -1,14 +1,28 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <input type="text" id="input-el">
-        <button id="input-btn">SAVE INPUT</button>
-        <button id="tab-btn">SAVE TAB</button>
-        <button id="delete-btn">DELETE ALL</button>
-        <ul id="ul-el">
-        </ul>
-        <script src="index.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Leads Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Input area -->
+        <input type="text" id="input-el" placeholder="Enter a URL..." autocomplete="off">
+        
+        <!-- Main Actions -->
+        <div class="button-group">
+            <button id="input-btn" class="btn-green">SAVE INPUT</button>
+            <button id="tab-btn" class="btn-blue">SAVE TAB</button>
+            <button id="delete-btn" class="btn-red">DELETE ALL</button>
+        </div>
+
+        <!-- List container for saved leads -->
+        <ul id="ul-el"></ul>
+    </div>
+
+    <!-- JavaScript linked at the bottom -->
+    <script src="index.js"></script>
+</body>
 </html>
